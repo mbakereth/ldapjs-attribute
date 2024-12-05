@@ -1,11 +1,11 @@
 'use strict'
 
-const { core: { LBER_SET } } = require('@mbakereth/ldap-protocol')
+const { core: { LBER_SET } } = require('@mbakereth/ldapjs-protocol')
 const {
   BerTypes,
   BerReader,
   BerWriter
-} = require('@mbakereth/ldap-asn1')
+} = require('@mbakereth/ldapjs-asn1')
 const warning = require('./lib/deprecations')
 
 /**
@@ -148,7 +148,7 @@ class Attribute {
   /**
    * Replaces instance properties with those found in a given BER.
    *
-   * @param {import('@mbakereth/ldap-asn1').BerReader} ber
+   * @param {import('@mbakereth/ldapjs-asn1').BerReader} ber
    *
    * @deprecated Use {@link fromBer} instead.
    */
@@ -229,7 +229,7 @@ class Attribute {
    * create a new {@link Attribute} instance. The BER must start
    * at the beginning of a sequence.
    *
-   * @param {import('@mbakereth/ldap-asn1').BerReader} ber
+   * @param {import('@mbakereth/ldapjs-asn1').BerReader} ber
    *
    * @returns {Attribute}
    */

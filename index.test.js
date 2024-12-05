@@ -4,8 +4,8 @@ const tap = require('tap')
 const {
   BerReader,
   BerWriter
-} = require('@mbakereth/ldap-asn1')
-const { core: { LBER_SET } } = require('@mbakereth/ldap-protocol')
+} = require('@mbakereth/ldapjs-asn1')
+const { core: { LBER_SET } } = require('@mbakereth/ldapjs-protocol')
 const warning = require('./lib/deprecations')
 const Attribute = require('./')
 
